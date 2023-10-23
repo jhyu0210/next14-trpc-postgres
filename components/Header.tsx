@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import Container from "./Container";
+import Container from "./ui/Container";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, ShoppingCart, Sun } from "lucide-react";
-import ProfileButton from "./ProfileButton";
-import { Button } from "./button";
+import ProfileButton from "./ui/ProfileButton";
+import { Button } from "./ui/button";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
