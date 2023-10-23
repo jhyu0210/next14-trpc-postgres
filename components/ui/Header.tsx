@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import Container from "./Container";
-import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Moon, ShoppingCart, Sun } from "lucide-react";
 import ProfileButton from "./ProfileButton";
+import { Button } from "./button";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
