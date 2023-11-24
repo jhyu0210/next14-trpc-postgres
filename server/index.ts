@@ -10,7 +10,7 @@ export const appRouter = router({
   }),
   addTodo: publicProceduer.input(z.string()).mutation(async (opts) => {
     await db.todo.create({
-      data: { content: opts.input, done: false, userId: "22" },
+      data: { content: opts.input, done: false },
     });
   }),
 });

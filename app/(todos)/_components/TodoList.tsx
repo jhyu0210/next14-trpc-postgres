@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { trpc } from "../../_trpc/client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function TodoList() {
   const [content, setContent] = useState("");
@@ -15,19 +17,20 @@ export default function TodoList() {
       <div>{JSON.stringify(getTodos.data)}</div>
       <div>
         <label htmlFor="content">Content</label>
-        <input
+        <Input
           id="content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
-        <button
+        <Button
+          variant="secondary"
           onClick={async () => {
             addTodo.mutate(content);
             setContent("");
           }}
         >
           Add Todo
-        </button>
+        </Button>
       </div>
     </div>
   );
