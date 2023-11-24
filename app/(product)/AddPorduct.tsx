@@ -23,8 +23,8 @@ import {
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { addNewProduct } from "./actions";
-import { experimental_useFormState as useFormState } from "react-dom";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useFormState } from "react-dom";
+import { useFormStatus } from "react-dom";
 import { getImageData } from "@/lib/getImageData";
 import { log } from "console";
 import { PutBlobResult } from "@vercel/blob";
