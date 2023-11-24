@@ -35,4 +35,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-# nextis13-postgres
+# nextis13-postgres project in vercel
+
+# npm i @trpc/client @trpc/react-query @tanstack/react-query

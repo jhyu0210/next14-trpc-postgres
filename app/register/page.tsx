@@ -1,23 +1,16 @@
 // import { Button } from "@/components/ui/button";
 // import { FormEvent } from "react";
-import Form from "./form";
+import { getServerSession } from "next-auth";
 
-const Register = () => {
-  // const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   const formData = new FormData(e.currentTarget);
-  //   const res = await fetch(`/api/auth/register`, {
-  //     method: "POST",
-  //     body: JSON.stringify({
-  //       email: formData.get("email"),
-  //       password: formData.get("password"),
-  //     }),
-  //   });
-  //   console.log({ res });
-  // };
+import { redirect } from "next/navigation";
+import SignupForm from "./SignupForm";
+
+const Register = async () => {
+  const session = await getServerSession();
+  if (session) redirect("/");
   return (
-    <div className="mt-32">
-      <Form />
+    <div className="mt-32 w-[80%] mx-auto max-w-screen-sm">
+      <SignupForm />
     </div>
   );
 };
