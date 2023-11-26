@@ -13,6 +13,21 @@ export const appRouter = router({
       data: { content: opts.input, done: false },
     });
   }),
+  setDone: publicProceduer
+    .input(
+      z.object({
+        id: z.string(),
+        done: z.boolean(),
+      })
+    )
+    .mutation(async (opts) => {
+      await db.todo.update({
+        data: { done: opts.input.done },
+        where: {
+          id: opts.input.id,
+        },
+      });
+    }),
 });
 
 export type AppRouter = typeof appRouter;

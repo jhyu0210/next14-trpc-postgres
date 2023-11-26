@@ -26,6 +26,7 @@
     "@tanstack/react-query-devtools": "^4.35.7",
     "@trpc/client": "^10.43.1",
     "@trpc/react-query": "^10.43.1",
+    "@trpc/server": "^10.44.1",
     "@vercel/blob": "^0.14.1",
     "@vercel/postgres": "^0.5.0",
     "bcrypt": "^5.1.1",
