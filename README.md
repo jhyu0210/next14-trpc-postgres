@@ -40,3 +40,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # npm i @trpc/client @trpc/react-query @tanstack/react-query
 
 # test
+
+# image gallery tailwind-config set for .grid-cols-gallery

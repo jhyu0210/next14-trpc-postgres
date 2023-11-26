@@ -1,7 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { authOptions } from "@/lib/authOptions";
 // import { getServerSession } from "next-auth";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
